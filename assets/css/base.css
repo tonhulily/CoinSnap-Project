@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    /* 100% = 16px => 62,5% = 10px, sử dụng đơn vị rem dễ*/
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    /* Nếu width < hoặc > 1200px thì sẽ mặc định = 100%*/
+    margin: 0 auto;
+    /* Tự động căn giữa */
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+/* Thẻ nằm trong class này nằm trên 1 hàng ngang và có xuống dòng */
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: calc(100%/2);
+}
+
+.col-third {
+    width: calc((100%/3));
+}
+
+.col-fourth {
+    width: 45%;
+}
+
+.col-sixth {
+    width: 55%;
+}
